@@ -23,3 +23,19 @@
   color: black;
   padding: 10px 30px;
 }
+
+.home-height {
+  height: calc(100vh - 56px);
+}
+
+input{
+  @apply bg-slate-900 border-b p-2 border-b-gray-500 
+}
+
+input:active{
+  @apply bg-slate-900 border-b p-2 border-b-yellow-300 border-l-0 
+}
+
+.listed:hover{
+  @apply text-yellow-300 border-b-4 border-b-yellow-300
+}

@@ -19,28 +19,28 @@ const Navbar = () => {
           <li className="mr-auto">
             <a
               className="hover:text-blue-800 text-red-600 font-bold text-lg"
-              href=""
+              href="#home"
             >
               Julius Njeru
             </a>
           </li>
-          <li className="hidden sm:inline-block">
-            <a className="hover:text-blue" href="#">
+          <li className="hidden sm:inline-block listed">
+            <a className="hover:text-blue" href="#about">
               About
             </a>
           </li>
-          <li className="hidden sm:inline-block">
-            <a className="hover:text-blue" href="#">
+          <li className="hidden sm:inline-block listed">
+            <a className="hover:text-blue" href="#portfolio">
               Portfolio
             </a>
           </li>
-          <li className="hidden sm:inline-block">
-            <a className="hover:text-blue" href="#">
+          <li className="hidden sm:inline-block listed">
+            <a className="hover:text-blue" href="#resume">
               Resume
             </a>
           </li>
-          <li className="hidden sm:inline-block">
-            <a className="hover:text-blue" href="#">
+          <li className="hidden sm:inline-block listed">
+            <a className="hover:text-blue" href="#contacts">
               Contacts
             </a>
           </li>
@@ -95,7 +95,7 @@ const Navbar = () => {
             onClick={() => setModalOpen(false)}
             className="w-full hover:bg-gray-200 py-3 pl-8"
           >
-            <a className="hover:text-blue" href="#">
+            <a className="hover:text-blue" href="#about">
               About
             </a>
           </li>
@@ -103,7 +103,7 @@ const Navbar = () => {
             onClick={() => setModalOpen(false)}
             className="w-full hover:bg-gray-200 py-3 pl-8"
           >
-            <a className="hover:text-blue" href="#">
+            <a className="hover:text-blue" href="#portfolio">
               Portfolio
             </a>
           </li>
@@ -111,7 +111,7 @@ const Navbar = () => {
             onClick={() => setModalOpen(false)}
             className="w-full hover:bg-gray-200 py-3 pl-8"
           >
-            <a className="hover:text-blue" href="#">
+            <a className="hover:text-blue" href="#resume">
               Resume
             </a>
           </li>
@@ -119,7 +119,7 @@ const Navbar = () => {
             onClick={() => setModalOpen(false)}
             className="w-full hover:bg-gray-200 py-3 pl-8"
           >
-            <a className="hover:text-blue" href="#">
+            <a className="hover:text-blue" href="#contacts">
               Contacts
             </a>
           </li>
