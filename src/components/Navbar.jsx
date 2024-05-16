@@ -2,6 +2,7 @@ import fb from "../icons/fb.png";
 import twitter from "../icons/twitter.png";
 import linkedin from "../icons/linkedin.png";
 import github from "../icons/github-color.svg";
+import julius from "../icons/jcode.png";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -15,14 +16,14 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="h-14 bg-slate-950">
-        <ul className="flex justify-end items-center gap-8 py-4 w-[90%] mx-auto">
+      <nav className="bg-slate-950">
+        <ul className="flex justify-end place-items-center items-center gap-8 py-4 w-[90%] mx-auto">
           <li className="mr-auto">
             <a
               className="hover:text-blue-800 text-red-600 font-bold text-lg"
               href="#home"
             >
-              Julius Njeru
+              <img className="h-10" src={julius} alt="" />
             </a>
           </li>
           <li className="hidden sm:inline-block listed">
