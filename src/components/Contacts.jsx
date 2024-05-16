@@ -37,7 +37,7 @@ const Contacts = () => {
     window.location.href = whatsappUrl;
   };
   return (
-    <section id="contacts" className="min-h-screen  scroll-pt-20">
+    <section id="contacts" className="min-h-screen  scroll-pt-20 pb-10 sm:pb-0">
       <div className="w-[90%] mx-auto pt-20">
         <h2 className="text-xs ">Contacts</h2>
         {/* <hr /> */}
@@ -48,7 +48,7 @@ const Contacts = () => {
         {/* Flex container */}
 
         <div className="flex flex-col sm:flex-row">
-          <div className="w-1/2 py-8 sm:pr-10">
+          <div className="sm:w-1/2 py-8 sm:pr-10">
             <p className="font-bold">
               Lets make something new, different or more meaningful or make
               thing more visual or conceptual?{" "}
@@ -56,13 +56,16 @@ const Contacts = () => {
             </p>
 
             <div className="flex flex-col space-y-4 mt-12">
-              <p className="text-yellow-200 flex gap-3 place-items-center">
+              <p className="text-yellow-200 flex gap-3 place-items-center text-xs">
                 <img className="h-6" src={phone} alt="" /> 0768585724
               </p>
-              <p className="text-yellow-200 flex gap-3 place-items-center">
+              <p className="text-yellow-200 flex gap-3 place-items-center text-xs">
                 {" "}
-                <img className="h-6" src={mail} alt="" /> juliusn411@gmail.com |
-                njeruthelearner@gmail.com
+                <img className="h-6 " src={mail} alt="" />{" "}
+                <a href="mailto:juliusn411@gmail.com">juliusn411@gmail.com</a>|{" "}
+                <a href="mailto:njeruthelearner@gmail.com">
+                  njeruthelearner@gmail.com
+                </a>
               </p>
             </div>
             <div className="w-full2 mt-4">
@@ -103,9 +106,9 @@ const Contacts = () => {
           </div>
 
           {/* Email Form */}
-          <div className="w-1/2">
+          <div className="sm:w-1/2">
             <form
-              className="flex flex-col space-y-6  w-[65%] mx-auto"
+              className="flex flex-col space-y-6  sm:w-[65%] mx-auto"
               onSubmit={handleSubmit}
             >
               <input
@@ -140,7 +143,7 @@ const Contacts = () => {
                 onChange={handleChange}
                 placeholder="Project description"
               />
-              <div className="bg-yellow-200 text-black font-light text-sm ml-auto px-4 py-2">
+              <div className="flex justify-center bg-yellow-200 text-black font-light text-sm sm:ml-auto px-4 py-2">
                 <button type="submit">HIRE ME</button>
               </div>
             </form>
