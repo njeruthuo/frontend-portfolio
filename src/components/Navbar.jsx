@@ -1,6 +1,7 @@
 import fb from "../icons/fb.png";
 import twitter from "../icons/twitter.png";
 import linkedin from "../icons/linkedin.png";
+import github from "../icons/github-color.svg";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -48,11 +49,11 @@ const Navbar = () => {
           <li className="hidden sm:flex space-x-4">
             <span className="sm:border-l-2 border-white"></span>
             <a
-              href="https://web.facebook.com/profile.php?id=100071365170089"
+              href="https://www.github.com/njeruthuo"
               target="_blank"
               className="bg-gray-700 p-2 rounded-full"
             >
-              <img className="w-4" src={fb} alt="Facebook" />
+              <img className="w-4" src={github} alt="GitHUB" />
             </a>
 
             <a
@@ -69,6 +70,14 @@ const Navbar = () => {
               className="bg-gray-700 p-2 rounded-full"
             >
               <img className="w-4" src={linkedin} alt="LinkedIn" />
+            </a>
+
+            <a
+              href="https://web.facebook.com/profile.php?id=100071365170089"
+              target="_blank"
+              className="bg-gray-700 p-2 rounded-full"
+            >
+              <img className="w-4" src={fb} alt="Facebook" />
             </a>
           </li>
 
@@ -138,6 +147,14 @@ const Navbar = () => {
               className="bg-gray-700 p-2 rounded-full"
             >
               <img className="w-4" src={twitter} alt="Twitter" />
+            </a>
+
+            <a
+              href="https://www.github.com/njeruthuo"
+              target="_blank"
+              className="bg-gray-700 p-2 rounded-full"
+            >
+              <img className="w-4" src={github} alt="GitHUB" />
             </a>
 
             <a

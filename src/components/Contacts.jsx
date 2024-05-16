@@ -1,8 +1,41 @@
 import fb from "../icons/fb.png";
 import twitter from "../icons/twitter.png";
 import linkedin from "../icons/linkedin.png";
+import github from "../icons/github-color.svg";
+import phone from "../icons/call.png";
+import mail from "../icons/mail.png";
+import { useState } from "react";
 
 const Contacts = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    budget: "",
+    description: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name, email, budget, description } = formData;
+    const message = `Hello! I'm ${name}.\nEmail: ${email}\nBudget: ${
+      budget || "N/A"
+    }\nDescription: ${description}`;
+    const phoneNumber = "+254768585724"; // Replace with your WhatsApp number including country code
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.location.href = whatsappUrl;
+  };
   return (
     <section id="contacts" className="min-h-screen  scroll-pt-20">
       <div className="w-[90%] mx-auto pt-20">
@@ -23,9 +56,13 @@ const Contacts = () => {
             </p>
 
             <div className="flex flex-col space-y-4 mt-12">
-              <p className="text-yellow-200">- 0768585724</p>
-              <p className="text-yellow-200">
-                - juliusn411@gmail.com | njeruthelearner@gmail.com
+              <p className="text-yellow-200 flex gap-3 place-items-center">
+                <img className="h-6" src={phone} alt="" /> 0768585724
+              </p>
+              <p className="text-yellow-200 flex gap-3 place-items-center">
+                {" "}
+                <img className="h-6" src={mail} alt="" /> juliusn411@gmail.com |
+                njeruthelearner@gmail.com
               </p>
             </div>
             <div className="w-full2 mt-4">
@@ -53,35 +90,54 @@ const Contacts = () => {
                 >
                   <img className="w-4" src={linkedin} alt="LinkedIn" />
                 </a>
+
+                <a
+                  href="https://www.github.com/njeruthuo"
+                  target="_blank"
+                  className="bg-gray-700 p-2 rounded-full"
+                >
+                  <img className="w-4" src={github} alt="GitHUB" />
+                </a>
               </div>
             </div>
           </div>
 
           {/* Email Form */}
           <div className="w-1/2">
-            <form className="flex flex-col space-y-6  w-[65%] mx-auto">
+            <form
+              className="flex flex-col space-y-6  w-[65%] mx-auto"
+              onSubmit={handleSubmit}
+            >
               <input
                 type="text"
                 name="name"
                 id="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Your name"
               />
               <input
                 type="email"
                 name="email"
                 id="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Mail address"
               />
               <input
                 type="number"
                 name="budget"
                 id="budget"
+                value={formData.budget}
+                onChange={handleChange}
                 placeholder="Your budget (optional)"
               />
               <input
                 type="text"
                 name="description"
                 id="description"
+                value={formData.description}
+                onChange={handleChange}
                 placeholder="Project description"
               />
               <div className="bg-yellow-200 text-black font-light text-sm ml-auto px-4 py-2">
