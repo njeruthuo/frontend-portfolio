@@ -17,7 +17,7 @@ const Portfolio = () => {
             const { img, title, description, url } = project;
             return (
               <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-4">
-                <a href={url}>
+                <a href={url} target="_blank">
                   <img src={img} alt="" />
                   <h1>{title}</h1>
                   <p>{description}</p>
