@@ -1,9 +1,4 @@
-import git from "../icons/git.png";
-import react from "../icons/react.png";
-import tailwind from "../icons/tailwind.png";
-import materialUI from "../icons/MUI.png";
-import redux from "../icons/redux.png";
-import js from "../icons/js.png";
+import { skills } from "../data";
 
 const About = () => {
   return (
@@ -17,40 +12,22 @@ const About = () => {
 
         {/* Flex container */}
 
-        <div id="skills" className="flex flex-wrap place-items-center mt-8 space-y-4 p-4">
-          <div className="skill">
-            <img src={git} alt="" />
-            <h1>Git version control</h1>
-            <p>A code version control tool</p>
-          </div>
-          <div className="skill">
-            <img src={react} alt="" />
-            <h1>React Library</h1>
-            <p>
-              A frontend library that makes building UIs super easy using
-              JavaScript.
-            </p>
-          </div>
-          <div className="skill">
-            <img src={tailwind} alt="" />
-            <h1>TailwindCSS</h1>
-            <p>A utility first framework for rapid UI development</p>
-          </div>
-          <div className="skill">
-            <img src={materialUI} alt="" />
-            <h1>Material UI</h1>
-            <p>Pre-styles UI components library</p>
-          </div>
-          <div className="skill">
-            <img src={redux} alt="" />
-            <h1>Redux</h1>
-            <p>A goated state management library</p>
-          </div>
-          <div className="skill">
-            <img src={js} alt="" />
-            <h1>JavaScript</h1>
-            <p>a powerful multipurpose scripting language</p>
-          </div>
+        <div
+          id="skills"
+          className="flex flex-wrap place-items-center mt-3 sm:mt-8 space-y-4 sm:p-4"
+        >
+          {skills.map((skill, index) => {
+            const { img, title, description } = skill;
+            return (
+              <div key={index} className="skill">
+                <img src={img} alt="" />
+                <div>
+                  <h1>{title}</h1>
+                  <p>{description}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
