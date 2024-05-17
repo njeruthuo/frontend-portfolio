@@ -1,6 +1,5 @@
 import { projects } from "../data";
 
-
 const Portfolio = () => {
   return (
     <section id="portfolio" className="min-h-screen  scroll-pt-20">
@@ -14,20 +13,18 @@ const Portfolio = () => {
         {/* Flex container */}
 
         <div id="projects" className="flex flex-wrap mt-8 space-y-4 p-4">
-          {projects.map((project, index)=>{
-            const { img, title, description } = project;
+          {projects.map((project, index) => {
+            const { img, title, description, url } = project;
             return (
-              <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-4">
-                <img src={img} alt="" />
-                <h1>{title}</h1>
-                <p>
-                  {description}
-                </p>
-              </div>
+              <a key={index} href={url}>
+                <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+                  <img src={img} alt="" />
+                  <h1>{title}</h1>
+                  <p>{description}</p>
+                </div>
+              </a>
             );
           })}
-          
-          
         </div>
       </div>
     </section>
