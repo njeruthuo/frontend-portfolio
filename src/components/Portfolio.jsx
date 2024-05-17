@@ -16,13 +16,13 @@ const Portfolio = () => {
           {projects.map((project, index) => {
             const { img, title, description, url } = project;
             return (
-              <a key={index} href={url}>
-                <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+              <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-4">
+                <a href={url}>
                   <img src={img} alt="" />
                   <h1>{title}</h1>
                   <p>{description}</p>
-                </div>
-              </a>
+                </a>
+              </div>
             );
           })}
         </div>
