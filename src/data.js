@@ -14,6 +14,12 @@ import calc from "./p-img/desktop.jpg";
 import notification from "./p-img/desktop-design.jpg";
 import newsletter from "./p-img/desktop-preview.jpg";
 import movies from "./p-img/moviebo.png";
+import python from "./icons/python.jpeg";
+import c from "./icons/c.jpeg";
+import django1 from "./icons/django1.jpg";
+import fastapi from "./icons/fastapi.png";
+import apis from "./icons/apis.png";
+import embedded from "./icons/embedded.jpeg";
 
 export const skills = [
   {
@@ -46,6 +52,39 @@ export const skills = [
     img: js,
     title: "JavaScript",
     description: "a powerful multipurpose scripting language",
+  },
+  {
+    img: python,
+    title: "Python",
+    description:
+      "a powerful scripting language for web, machine learning and automation",
+  },
+  {
+    img: django1,
+    title: "Django",
+    description: "a powerful web framework for perfectionists with deadlines",
+  },
+  {
+    img: c,
+    title: "C/C++",
+    description:
+      "low level language for direct hardware manipulations and control",
+  },
+  {
+    img: fastapi,
+    title: "FastAPI",
+    description:
+      "a lightweight high performance api framework built with concurrency/multithreading in mind",
+  },
+  {
+    img: embedded,
+    title: "Embedded programming",
+    description: "Hardware programming for innovation projects",
+  },
+  {
+    img: apis,
+    title: "API Integrations",
+    description: "Mpesa/Paypal/Africastalking/Mailing services/custom APIs integrations and testing",
   },
 ];
 

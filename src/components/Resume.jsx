@@ -123,8 +123,10 @@ const Resume = () => {
         <div className="">
           <a
             className="mt-3 flex justify-center items-center sm:w-1/3 w-full mx-auto bg-red-500 py-2 rounded"
-            href="/Frontend.pdf"
-            download="Frontend.pdf"
+            href="/Julius Njeru Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            // download="Julius Njeru Resume.pdf"
           >
             Check my resume
           </a>
