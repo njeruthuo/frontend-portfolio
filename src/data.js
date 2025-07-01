@@ -104,7 +104,7 @@ export const projects = [
       "A solution made from a competition challenge. The solution allows users to browse through the latest movies and series.",
   },
   {
-    url: "https://law-firm-flame.vercel.app/",
+    url: "https://www.mocherelaw.co.ke/",
     img: mochere,
     title: "Mochere Law",
     description:
