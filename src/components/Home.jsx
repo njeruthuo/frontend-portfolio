@@ -6,7 +6,7 @@ const Home = () => {
       <div className="w-[90%] mx-auto flex sm:flex-row flex-col-reverse place-items-center">
         <div className="sm:w-1/2 w-full">
           <h1 className="sm:text-5xl text-xl text-center  sm:text-left mb-4">
-            Hello, I&apos;m Julius, <br/>
+            Hello, I'm Julius, <br/>
             <span className="block text-gradient pt-2"> a Full stack Developer</span>
           </h1>
           <p className="text-white text-center text-base/6 sm:text-left pr-6">
