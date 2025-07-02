@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="bg-slate-950">
-        <ul className="flex justify-end place-items-center items-center gap-8 py-4 w-[90%] mx-auto">
+        <ul className="flex justify-end place-items-center items-center place-content-center gap-8 py-4 w-[90%] mx-auto">
           <li className="mr-auto">
             <a
               className="hover:text-blue-800 text-red-600 font-bold text-lg"
@@ -84,7 +84,7 @@ const Navbar = () => {
 
           <li
             id="hamburger"
-            className="hover:text-blue sm:hidden pr-4 text-xl cursor-pointer"
+            className="hover:text-blue sm:hidden pr-4 text-5xl pb-4 cursor-pointer"
             onClick={() => setModalOpen(!modalOpen)}
           >
             &#9776;
